@@ -1,0 +1,56 @@
+@tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer base {
+      :root {
+        --background: 210 30% 12%; /* Dark Slate Blue */
+        --foreground: 210 30% 95%; /* Light Gray */
+
+        --card: 210 30% 15%; /* Slightly Lighter Dark Slate Blue */
+        --card-foreground: 210 30% 90%; 
+
+        --popover: 210 30% 10%;
+        --popover-foreground: 210 30% 90%;
+
+        --primary: 25 95% 53%; /* Vibrant Orange */
+        --primary-foreground: 210 30% 98%; 
+
+        --secondary: 185 60% 45%; /* Medium Teal */
+        --secondary-foreground: 210 30% 98%;
+
+        --muted: 210 30% 25%; /* Muted Slate Blue */
+        --muted-foreground: 210 30% 70%; 
+
+        --accent: 25 95% 53%; /* Vibrant Orange for accents */
+        --accent-foreground: 210 30% 98%;
+
+        --destructive: 0 70% 50%; /* Strong Red */
+        --destructive-foreground: 210 30% 98%;
+
+        --border: 25 80% 40%; /* Darker Orange for borders */
+        --input: 210 30% 20%; 
+        --ring: 25 95% 60%; /* Lighter Orange for focus rings */
+
+        --radius: 0.5rem;
+      }
+    }
+
+    @layer base {
+      * {
+        @apply border-border;
+      }
+      body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
